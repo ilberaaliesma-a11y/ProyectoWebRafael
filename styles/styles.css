@@ -75,9 +75,16 @@ grid-row-gap: 0px;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
-.div1{
-    padding-top: 70px;
+
+.mi-contacto img{
+    max-width: 100%;
+    height: auto;
 }
+
+.div1, .div2, .div3 {
+    text-align: center;
+}
+
 h1{
     padding-left: 7px;
     font-style: italic;
@@ -201,4 +208,9 @@ footer a {
     padding-left: 10px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.div1 a p, .div2 a p, .div3 a p {
+    font-size: 10px;
+    margin-top: 8px;
 }
