@@ -1,27 +1,46 @@
-<feed xml:lang="es" xml:base="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/">
-<id>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/</id>
-<title>Página Principal</title>
-<updated>2026-01-29T13:33:00+01:00</updated>
-<link rel="alternate" href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
-<author>
-<name>Rafael Illescas Becerra</name>
-<email>ilbera_aliesma@iesmedinaazahara.es</email>
-</author>
-<category term="Mis habilidades"/>
-<contributor>
-<name>Rafael Illescas Becerra</name>
-<email>ilbera_aliesma@iesmedinaazahara.es</email>
-<uri>https://www.linkedin.com/in/otro</uri>
-</contributor>
-<entry>
-<id>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/</id>
-<title>Información</title>
-<updated>2026-01-29T13:39:00+01:00</updated>
-<author>
-<name>Rafael Illescas Becerra</name>
-<email>ilbera_aliesma@iesmedinaazahara.es</email>
-</author>
-<summary>Esto es el pie de página</summary>
-<link rel="alternate" href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
-</entry>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="es"
+      xml:base="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/">
+
+  <id>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/</id>
+  <title>Página principal</title>
+  <updated>2026-01-29T12:53:00+01:00</updated>
+
+  <link rel="self"
+        type="application/atom+xml"
+        href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/atom.xml"/>
+
+  <author>
+    <name>Rafael Illescas Becerra</name>
+    <email>ilbera_aliesma@iesmedinaazahara.es</email>
+  </author>
+
+  <category term="Portfolio"/>
+
+  <contributor>
+    <name>otro Autor</name>
+    <email>otro@gmail.com</email>
+    <uri>https://www.linkedin.com/in/otro</uri>
+  </contributor>
+
+  <entry>
+    <id>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/</id>
+    <title>Sobre-mi</title>
+    <updated>2026-01-29T12:56:00+01:00</updated>
+
+    <author>
+      <name>Rafael Illescas Becerra</name>
+      <email>ilbera_aliesma@iesmedinaazahara.es</email>
+    </author>
+
+    <summary>
+      Información sobre mis habilidades, mis contactos, sobre mi vida personal, los objetivos
+      que tengo y lo que ya sé
+    </summary>
+
+    <link rel="alternate"
+          href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
+  </entry>
+
 </feed>
