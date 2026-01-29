@@ -1,1 +1,48 @@
-
+<rss version="2.0">
+<channel>
+<!--Prólogo-->
+<title>Página Principal</title>
+<link>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/index.html</link>
+<description>Descripción de quién soy y mis objetivos hasta que acabe el curso</description>
+<category>principal</category>
+<copyright>1º ASIR - LMSGI</copyright>
+<image>
+<url>
+https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/index.html
+</url>
+<title>Mis cursos</title>
+<link>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/pages/cursos.html</link>
+<width>30</width>
+<height>30</height>
+</image>
+<language>es-es</language>
+<lastBuildDate>Thurs, 29 Ene 2026 13:27:00 +0100</lastBuildDate>
+<webMaster>ilbera_aliesma@iesmedinaazahara.es</webMaster>
+<!-- Noticias del canal -->
+<item>
+<title>Habilidades</title>
+<description>
+Aquí verás mis habilidades
+</description>
+<link>
+https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/pages/habilidades.html
+</link>
+<author>ilbera_aliesma@iesmedinaazahara.es</author>
+<category>Habilidades</category>
+<enclosure url="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/" type="video" length="32572719"/>
+<pubDate>Thurs, 29 ene 2026 13:29:00 +0100</pubDate>
+</item>
+<item>
+<title>Sobre mí</title>
+<description>
+Aquí encontrarás información sobre mí
+</description>
+<link>
+https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/pages/sobre-mi.html
+</link>
+<author>ilbera_aliesma@iesmedinaazahara.es</author>
+<category>Sobre-mí</category>
+<pubDate>Thurs, 29 Ene 2026 13:32:00 +0100</pubDate>
+</item>
+</channel>
+</rss>
