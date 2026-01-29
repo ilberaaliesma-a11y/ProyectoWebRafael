@@ -3,7 +3,6 @@
 <title>Página Principal</title>
 <updated>2026-01-29T13:33:00+01:00</updated>
 <link rel="alternate" href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
-<link rel="self" href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
 <author>
 <name>Rafael Illescas Becerra</name>
 <email>ilbera_aliesma@iesmedinaazahara.es</email>
@@ -14,19 +13,15 @@
 <email>ilbera_aliesma@iesmedinaazahara.es</email>
 <uri>https://www.linkedin.com/in/otro</uri>
 </contributor>
-<logo>ldm.jpg</logo>
 <entry>
-<id>
-https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/
-</id>
-<title>Información sobre mis habilidades</title>
-<update>2026-01-29T13:39:00+01:00</update>
+<id>https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/</id>
+<title>Información</title>
+<updated>2026-01-29T13:39:00+01:00</updated>
 <author>
 <name>Rafael Illescas Becerra</name>
 <email>ilbera_aliesma@iesmedinaazahara.es</email>
 </author>
-<summary>
-Aquí encontrarás parte mis contactos</summary>
+<summary>Esto es el pie de página</summary>
 <link rel="alternate" href="https://ilberaaliesma-a11y.github.io/ProyectoWebRafael/"/>
 </entry>
 </feed>
