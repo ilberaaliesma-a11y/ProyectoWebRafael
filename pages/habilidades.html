@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -18,21 +18,76 @@
   <a id="contacto" href="contacto.html">Contacto</a>
 </nav> 
   </header>
-   <div class="cuadrado" style="background-color: #4DFAEE;">
+   <div class="cuadrado">
     <div class="cuerpo-cuadrado">
-      <h2 class="título">Mis habilidades</h2>
-        <section id="habilidades">
-              <ul>
-                  <li>Conocimiento básico en HTML y CSS</li>
-                  <li>Conocimiento muy básico en mecánica de coches</li>
-                  <li>Idiomas: Español, Inglés</li>
-                  <li>Trabajo en equipo y comunicación</li>
-                  <li>Capacidad de aprendizaje rápido</li>
-                  <li>Resolución de problemas y buena gestión del tiempo</li>
-              </ul>
-          </section>
+      <h2 id="titulo-habilidades" class="título">Mis Habilidades</h2>
+      
+      <div class="habilidades-grid">
+        <div class="habilidad-card">
+          <h3>💻 Desarrollo Web</h3>
+          <p>Conocimiento básico en HTML y CSS para crear páginas web funcionales y atractivas.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 60%;"></span>
+            <span class="nivel-text">Intermedio</span>
+          </div>
         </div>
+
+        <div class="habilidad-card">
+          <h3>🔧 Mecánica Automotriz</h3>
+          <p>Conocimiento básico en mecánica de coches, mantenimiento y reparaciones simples.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 40%;"></span>
+            <span class="nivel-text">Básico</span>
+          </div>
+        </div>
+
+        <div class="habilidad-card">
+          <h3>🌍 Idiomas</h3>
+          <p>Español nativo y nivel intermedio de inglés. Preparándome para certificación C1.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 75%;"></span>
+            <span class="nivel-text">Avanzado</span>
+          </div>
+        </div>
+
+        <div class="habilidad-card">
+          <h3>🤝 Trabajo en Equipo</h3>
+          <p>Excelente capacidad para colaborar con otros, comunicar ideas y trabajar hacia objetivos comunes.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 90%;"></span>
+            <span class="nivel-text">Excelente</span>
+          </div>
+        </div>
+
+        <div class="habilidad-card">
+          <h3>🧠 Aprendizaje Rápido</h3>
+          <p>Capacidad para adquirir nuevos conocimientos y adaptarme rápidamente a tecnologías emergentes.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 85%;"></span>
+            <span class="nivel-text">Muy Bueno</span>
+          </div>
+        </div>
+
+        <div class="habilidad-card">
+          <h3>⚡ Resolución de Problemas</h3>
+          <p>Habilidades analíticas para identificar problemas y encontrar soluciones eficientes, junto con buena gestión del tiempo.</p>
+          <div class="habilidad-nivel">
+            <span class="nivel-bar" style="width: 80%;"></span>
+            <span class="nivel-text">Avanzado</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <nav aria-label="Navegación de página">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="./sobre-mi.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="./habilidades.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="./cursos.html">4</a></li>
+    </ul>
+  </nav>
     <footer>
         <div class="footer-content">
             <div class="contact-info">
@@ -44,5 +99,6 @@
 </body>
 
 </html>
+
 
 
