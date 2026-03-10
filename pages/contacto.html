@@ -18,32 +18,60 @@
   <a id="yo" href="sobre-mi.html">Sobre mí</a>
 </nav>
   </header>
-  <div class="cuadrado" style="background-color: #4DFAEE;">
+  <div class="cuadrado">
     <div class="cuerpo-cuadrado">
-      <section id="mis-contactos"></section>
-        <h2 class="título">Contactos</h2>
-        <section class="redes">
-          <div class="mi-contacto">
-            <div class="div1">
-                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
-                  <img src="../images/gmail.png" width="33%">
-                  <p>ilbera_aliesma@iesmedinaazahara.es</p>
-                </a>
+      <section id="mis-contactos">
+        <h2 id="titulo-contactos" class="título">Contacto</h2>
+
+        <div class="contact-grid">
+          <aside class="contact-card">
+            <div class="avatar-wrap">
+              <img src="../images/avatar.png" alt="Avatar de Rafa" class="avatar">
             </div>
-      <div class="div2">
-          <a href="https://github.com/" target="_blank">
-            <img src="../images/github2.png" width="33%">
-            <p>https://github.com/ilberaaliesma-a11y</p>
-          </a>
-      </div>
-      <div class="div3">
-          <a href="https://codepen.io/" target="_blank">
-            <img src="../images/codepen.png" width="33%">
-            <p>https://codepen.io/Rafael-Illescas-Becerra</p>
-          </a>
+            <h3>Rafa Illescas</h3>
+            <p class="card-text">¿Tienes una pregunta o quieres colaborar? Escríbeme y te respondo lo antes posible.</p>
+
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:ilbera_aliesma@iesmedinaazahara.es">ilbera_aliesma@iesmedinaazahara.es</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/ilberaaliesma-a11y" target="_blank">/ilberaaliesma-a11y</a></li>
+              <li><strong>CodePen:</strong> <a href="https://codepen.io/Rafael-Illescas-Becerra" target="_blank">/Rafael-Illescas-Becerra</a></li>
+            </ul>
+
+            <div class="social-buttons">
+              <a class="social-btn" href="mailto:ilbera_aliesma@iesmedinaazahara.es">✉️ Email</a>
+              <a class="social-btn" href="https://github.com/ilberaaliesma-a11y" target="_blank">🐙 GitHub</a>
+              <a class="social-btn" href="https://codepen.io/Rafael-Illescas-Becerra" target="_blank">🎨 CodePen</a>
+            </div>
+          </aside>
+
+          <div class="contact-form-wrap">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <small class="error" id="error-name"></small>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@ejemplo.com" required>
+                <small class="error" id="error-email"></small>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="6" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+                <small class="error" id="error-message"></small>
+              </div>
+
+              <div class="form-row">
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+                <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              </div>
+            </form>
           </div>
         </div>
-        </section>
+
       </section>
     </div>
   </div>
@@ -67,9 +95,56 @@
             </div>
             <p class="copyright">© 2025 Rafa - Portfolio Estudiantil</p>
         </div>
-    </footer>
+          <script>
+            (function(){
+              const form = document.getElementById('contactForm');
+              const status = document.getElementById('form-status');
+
+              function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+              }
+
+              form.addEventListener('submit', function(e){
+                e.preventDefault();
+                let ok = true;
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+                const message = document.getElementById('message');
+
+                document.getElementById('error-name').textContent = '';
+                document.getElementById('error-email').textContent = '';
+                document.getElementById('error-message').textContent = '';
+                status.textContent = '';
+
+                if (!name.value || name.value.trim().length < 2) {
+                  document.getElementById('error-name').textContent = 'Introduce tu nombre.'; ok = false;
+                }
+                if (!validateEmail(email.value)) {
+                  document.getElementById('error-email').textContent = 'Email no válido.'; ok = false;
+                }
+                if (!message.value || message.value.trim().length < 10) {
+                  document.getElementById('error-message').textContent = 'El mensaje es muy corto.'; ok = false;
+                }
+
+                if (!ok) return;
+
+                const btn = form.querySelector('.btn-submit');
+                btn.disabled = true;
+                btn.textContent = 'Enviando...';
+
+                setTimeout(() => {
+                  btn.disabled = false;
+                  btn.textContent = 'Enviar mensaje';
+                  status.textContent = 'Mensaje enviado. ¡Gracias!';
+                  form.reset();
+                }, 900);
+              });
+            })();
+          </script>
+          <footer>
 </body>
 </html>
+
 
 
 
